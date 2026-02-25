@@ -6,7 +6,7 @@ load(filename,"Xf_save","params","D1_save","cellprop_save","inow");
 
 if ~exist('inow','var'), inow = 100*size(Xf_save,3)*params.save_interval; end
 
-tint = 5;       % adjust the interval between plotted frames
+tint = 1;       % adjust the interval between plotted frames
 if make_movie, F(floor(min(size(Xf_save,3),floor(inow/params.save_interval))/tint)) = struct('cdata',[],'colormap',[]); end
 
 %% Adjust figure position and axis limits
