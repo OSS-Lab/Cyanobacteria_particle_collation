@@ -2,3 +2,5 @@
 Cyanbacterial motility 3D biophysical model and image analysis code.
 
 Associated timelapse videos are available at: 
+
+https://zenodo.org/uploads/18680430
