@@ -114,7 +114,7 @@ shortframes = [380,1200]
 longframes = [280,900]
 pseudframes = [0,230]
 
-
+plt.rc('font',family = 'Arial')
 
 allvdfs = []
 dt = 60 #s
@@ -154,8 +154,17 @@ g.plot_marginals(sns.boxplot, log_scale=True)
 g.plot_joint(sns.scatterplot) #, color='black', edgecolor='black'
 g.set_axis_labels(xlabel='length [μm]', ylabel='median speed [μm/s]',fontsize = 12)
 
+g.ax_joint.axvline(x=120, color='r', linestyle='--', linewidth=1)
+g.ax_joint.axvline(x=320, color='g', linestyle='--', linewidth=1)
+g.ax_marg_x.axvline(x=120, color='r', linestyle='--', linewidth=1)
+g.ax_marg_x.axvline(x=320, color='g', linestyle='--', linewidth=1)
 
-#plt.savefig('fig4_length_distribution.svg',bbox_inches = 'tight')
+handles, labels = g.ax_joint.get_legend_handles_labels()
+g.ax_joint.legend(handles=handles, labels=[r"long $\it{F. draycotensis}$", r'short $\it{F. draycotensis}$',r'$\it{Pseudanabaena}$'], 
+                  title=None, loc='upper left', bbox_to_anchor=(-0.05, 1.05), labelspacing=0.2)
+
+
+plt.savefig('fig4_length_distribution_lines.svg',bbox_inches = 'tight')
 #%%
 means = allvdfs_.groupby(['dataset'],as_index = False).mean()
 stds = allvdfs_.groupby(['dataset'],as_index = False).std()
