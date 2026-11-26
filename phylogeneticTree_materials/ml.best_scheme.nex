@@ -1,0 +1,134 @@
+#nexus
+begin sets;
+  charset ADK = 1-184;
+  charset AICARFT_IMPCHas_Ribosomal_S20p_tRNA-synt_1d = 185-697  9050-9149  11475-12059;
+  charset ATP-synt = 698-1012;
+  charset ATP-synt_A = 1013-1262;
+  charset Adenylsucc_synt = 1263-1707;
+  charset Chorismate_synt = 1708-2070;
+  charset EF_TS = 2071-2289;
+  charset GrpE = 2290-2532;
+  charset Ham1p_like = 2533-2725;
+  charset IPPT = 2726-3030;
+  charset OSCP = 3031-3214;
+  charset PGK = 3215-3615;
+  charset Pept_tRNA_hydro = 3616-3825;
+  charset RBFA = 3826-3957;
+  charset RNA_pol_L = 3958-4271;
+  charset RNA_pol_Rpb6 = 4272-4346;
+  charset RRF = 4347-4528;
+  charset RecO_C = 4529-4806;
+  charset Ribosom_S12_S23 = 4807-4932;
+  charset Ribosomal_L1 = 4933-5170;
+  charset Ribosomal_L13 = 5171-5321;
+  charset Ribosomal_L14 = 5322-5443;
+  charset Ribosomal_L16 = 5444-5582;
+  charset Ribosomal_L17 = 5583-5698;
+  charset Ribosomal_L18p = 5699-5818;
+  charset Ribosomal_L19 = 5819-5938;
+  charset Ribosomal_L2 = 5939-6225;
+  charset Ribosomal_L20 = 6226-6342;
+  charset Ribosomal_L21p = 6343-6470;
+  charset Ribosomal_L22 = 6471-6589;
+  charset Ribosomal_L23 = 6590-6689;
+  charset Ribosomal_L27 = 6690-6779;
+  charset Ribosomal_L27A = 6780-6927;
+  charset Ribosomal_L28 = 6928-7005;
+  charset Ribosomal_L29 = 7006-7080;
+  charset Ribosomal_L3 = 7081-7292;
+  charset Ribosomal_L32p = 7293-7350;
+  charset Ribosomal_L4 = 7351-7560;
+  charset Ribosomal_L5 = 7561-7741;
+  charset Ribosomal_L6 = 7742-7920;
+  charset Ribosomal_L9_C = 7921-8072;
+  charset Ribosomal_S10 = 8073-8177;
+  charset Ribosomal_S11 = 8178-8307;
+  charset Ribosomal_S13 = 8308-8434;
+  charset Ribosomal_S15 = 8435-8523;
+  charset Ribosomal_S16 = 8524-8609;
+  charset Ribosomal_S17 = 8610-8692;
+  charset Ribosomal_S19 = 8693-8784;
+  charset Ribosomal_S2 = 8785-9049;
+  charset Ribosomal_S3_C = 9150-9391;
+  charset Ribosomal_S6 = 9392-9501;
+  charset Ribosomal_S7 = 9502-9657;
+  charset Ribosomal_S8 = 9658-9790;
+  charset Ribosomal_S9 = 9791-9927;
+  charset RsfS = 9928-10068;
+  charset RuvX = 10069-10216;
+  charset SecE = 10217-10292;
+  charset SecG = 10293-10369;
+  charset SecY = 10370-10804;
+  charset SmpB = 10805-10959;
+  charset TsaE = 10960-11115;
+  charset UPF0054 = 11116-11284;
+  charset eIF-1a = 11285-11358;
+  charset ribosomal_L24 = 11359-11474;
+  charset tRNA_m1G_MT = 12060-12293;
+  charpartition mymodels =
+    Q.PFAM+I+G4: ADK,
+    LG+F+R6: AICARFT_IMPCHas_Ribosomal_S20p_tRNA-synt_1d,
+    Q.YEAST+I+R5: ATP-synt,
+    LG+F+R5: ATP-synt_A,
+    LG+R6: Adenylsucc_synt,
+    Q.PFAM+R6: Chorismate_synt,
+    Q.INSECT+I+R5: EF_TS,
+    Q.INSECT+F+R6: GrpE,
+    Q.PFAM+R6: Ham1p_like,
+    Q.PFAM+I+R6: IPPT,
+    Q.YEAST+F+R5: OSCP,
+    LG+F+R5: PGK,
+    Q.PFAM+I+R5: Pept_tRNA_hydro,
+    Q.PFAM+I+R5: RBFA,
+    Q.INSECT+I+R5: RNA_pol_L,
+    Q.INSECT+I+G4: RNA_pol_Rpb6,
+    Q.INSECT+I+G4: RRF,
+    Q.INSECT+F+R6: RecO_C,
+    WAG+I+G4: Ribosom_S12_S23,
+    LG+I+G4: Ribosomal_L1,
+    Q.YEAST+I+R5: Ribosomal_L13,
+    Q.INSECT+I+G4: Ribosomal_L14,
+    Q.INSECT+I+R4: Ribosomal_L16,
+    LG+I+G4: Ribosomal_L17,
+    Q.YEAST+I+G4: Ribosomal_L18p,
+    Q.YEAST+I+G4: Ribosomal_L19,
+    LG+I+G4: Ribosomal_L2,
+    Q.INSECT+I+G4: Ribosomal_L20,
+    Q.PFAM+R5: Ribosomal_L21p,
+    Q.PFAM+R4: Ribosomal_L22,
+    LG+I+G4: Ribosomal_L23,
+    LG+I+G4: Ribosomal_L27,
+    Q.PFAM+I+G4: Ribosomal_L27A,
+    Q.INSECT+I+G4: Ribosomal_L28,
+    Q.YEAST+G4: Ribosomal_L29,
+    LG+I+G4: Ribosomal_L3,
+    Q.INSECT+I+G4: Ribosomal_L32p,
+    LG+I+G4: Ribosomal_L4,
+    LG+I+G4: Ribosomal_L5,
+    LG+I+G4: Ribosomal_L6,
+    LG+R5: Ribosomal_L9_C,
+    Q.INSECT+G4: Ribosomal_S10,
+    Q.INSECT+I+G4: Ribosomal_S11,
+    Q.INSECT+I+G4: Ribosomal_S13,
+    Q.INSECT+I+G4: Ribosomal_S15,
+    LG+G4: Ribosomal_S16,
+    Q.INSECT+I+G4: Ribosomal_S17,
+    Q.INSECT+I+G4: Ribosomal_S19,
+    Q.INSECT+F+I+R5: Ribosomal_S2,
+    Q.INSECT+I+R5: Ribosomal_S3_C,
+    Q.PFAM+G4: Ribosomal_S6,
+    Q.INSECT+R5: Ribosomal_S7,
+    Q.INSECT+I+G4: Ribosomal_S8,
+    Q.INSECT+I+G4: Ribosomal_S9,
+    LG+I+G4: RsfS,
+    LG+R6: RuvX,
+    Q.INSECT+F+G4: SecE,
+    MTZOA+R5: SecG,
+    LG+F+R6: SecY,
+    LG+I+G4: SmpB,
+    Q.PFAM+I+R5: TsaE,
+    Q.PFAM+R6: UPF0054,
+    Q.YEAST+G4: eIF-1a,
+    Q.YEAST+R5: ribosomal_L24,
+    Q.PFAM+R6: tRNA_m1G_MT;
+end;
